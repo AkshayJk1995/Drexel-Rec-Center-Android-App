@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:textAlignment="center"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:title="@string/intsport"
+        app:logo="@drawable/dragonblue"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:showAsAction="always|withText"
+        app:title="@string/intsport"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rf_intro_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sportoff"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/int_sports"
+                tools:ignore="contentDescription" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insp_intro1"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insp_intro2"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:text="@string/insp_intro3"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="email"
+                android:text="@string/insp_intro4"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insp_intro5"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insp_intro6"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insp_intro7"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/button_su"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:text="@string/Su"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="198dp" />
+
+            <Button
+                android:id="@+id/button_ls"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:text="@string/ls"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="198dp" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insp_intro8"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insp_intro9"
+                android:textAlignment="center"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insp_intro10"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/rf_intro_tv12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insp_intro11"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

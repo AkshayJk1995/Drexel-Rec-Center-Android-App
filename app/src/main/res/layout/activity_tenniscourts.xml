@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:textAlignment="center"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:title="@string/rc"
+        app:logo="@drawable/dragonblue"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:showAsAction="always|withText"
+        app:title="@string/rc"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/rf_intro_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TENNIS COURTS"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tenniscourts" />
+    <TextView
+        android:id="@+id/rf_intro_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drexel Tennis Courts 34th Street and Lancaster Avenue"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/rf_intro_tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="215-571-3777"
+        android:textAlignment="center"
+        android:autoLink="phone"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/rf_intro_tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recathletics@drexel.edu"
+        android:textAlignment="center"
+        android:autoLink="email"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/rf_intro_tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:text="\nDrexel University hosts two main tennis courts available for free play. The tennis courts are lighted to accommodate the student schedules for evening matches."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="\nTennis Courts Hours"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:text="The Drexel Tennis Courts are on a first-come, first-serve basis. Reservations can be made for Drexel student organizations and campus departments for events."/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

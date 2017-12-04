@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:textAlignment="center"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:title="@string/intsport"
+        app:logo="@drawable/dragonblue"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:showAsAction="always|withText"
+        app:title="Club Sports"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cs_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduction"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/club_intro"
+                tools:ignore="contentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drexel University's Club Sports are student organizations created by the students and may be competitive, recreational, and/or instructional in nature. These sport activities are aimed at developing the personal and athletic interests of students by providing a quality recreation, education and leadership experience. Club Sports serve as an excellent way to learn technique, strategy, and safety with the goal of competing against other recognized undergraduate collegiate clubs in the region."
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nRecreational Athletics works in conjunction with the Office of Campus Activities to provide official University student organization recognition to the club sports teams. Recreational Athletics serves as the Club Sports Program administrator and is responsible for the development and implementation of the policies of the program.\n"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+            <Button
+                android:id="@+id/button_lcs"
+                android:text="List of Club Sports"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/holo_orange_light"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="198dp" />
+
+            <Button
+                android:id="@+id/button_forms"
+                android:text="List of Forms"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:backgroundTint="@android:color/holo_orange_light"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="198dp" />
+
+            <Button
+                android:id="@+id/button_schedule"
+                android:text="Schedule"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:backgroundTint="@android:color/holo_orange_light"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="198dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
