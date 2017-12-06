@@ -20,8 +20,11 @@ public class TestPrint extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Bundle bundle=getIntent().getExtras();
+        int code=bundle.getInt("code");
         Intent intent = new Intent(TestPrint.this, FormSubmission.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("code",code);
         startActivity(intent);
     }
 
