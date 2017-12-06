@@ -24,14 +24,14 @@ import com.example.akshayjk.attempt1.SQL.DatabaseHandler;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
+/*
 import okhttp3.FormBody;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-
-import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
+*/
 
 
 /**
@@ -161,6 +161,7 @@ public class FormSubmission extends AppCompatActivity {
                 textView.append(spStatus.getSelectedItem().toString());
                 textView.append(spGender.getSelectedItem().toString());
                 Intent intent = new Intent(FormSubmission.this, TestPrint.class);
+                intent.putExtra("code",code);
                 startActivity(intent);
             }
         });
@@ -215,8 +216,8 @@ public class FormSubmission extends AppCompatActivity {
 */
                                 Toast.makeText(getApplicationContext(), "Registered", Toast.LENGTH_LONG).show();
                                 Intent nextAct1 = new Intent(FormSubmission.this, LoginForm.class);
-                                nextAct1.putExtra("code", 2);
-                                startActivity(nextAct1);
+                                nextAct1.putExtra("code", code);
+                                    startActivity(nextAct1);
 
                             }
                         } catch (Exception e) {
